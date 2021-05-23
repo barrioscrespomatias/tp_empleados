@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javascript/funciones.js"></script>
+    <script src=""></script>
+    <title>HTML - 5 Formulario Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="../Back/verificarUsuarioPdo.php" method="POST">
+            <table align="center">
+                <thead>
+                    <td>
+                        <h4>Ingreso de credenciales</h4>
+                    </td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="12">
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label for="dni">DNI:</label>
+                        </td>
+                        <td colspan="6">
+                            <input type="number" name="txtDni" id="txtDni" min="1000000" max="55000000">
+                            <span style="display: none;" id="errorTxtDni">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <label for="apellido">Apellido:</label>
+                        </td>
+                        <td colspan="6">
+                            <input type="text" name="txtApellido" id="txtApellido">
+                            <span style="display: none;" id="errorTxtApellido">*</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12">
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12">
+                            <input type="button" value="Limpiar" name="btnLimpiar" id="btnLimpiar" onclick="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12">
+                            <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar" 
+                            onclick="AdministrarValidacionesLogin()">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

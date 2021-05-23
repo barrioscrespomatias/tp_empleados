@@ -1,0 +1,14 @@
+{
+    "name": "vendor/mpdf",
+    "description": "convertir_pagina_html_pdf",
+    "require": {        
+        "mpdf/mpdf": "8.*"          
+    },
+    "authors": [
+        {
+            "name": "TP_01",
+            "email": "tp@mail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
